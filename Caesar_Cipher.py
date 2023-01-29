@@ -17,7 +17,7 @@ def decrypt(cipher_text: str, shift: int) -> str:
     plain_text = ""
     for char in cipher_text:
         if not char.isalpha():
-            cipher_text += char
+            plain_text += char
             continue
         if char.isupper():
             shift_char = chr((ord(char) - shift - 65) % 26 + 65)
@@ -30,7 +30,7 @@ def decrypt(cipher_text: str, shift: int) -> str:
 
 def decrypt_all(cipher_text: str) -> None:
     for i in range(26):
-        decrypted = encrypt(cipher_text, i)
+        decrypted = decrypt(cipher_text, i)
         print(f"{i}:\t{decrypted}")
 
 

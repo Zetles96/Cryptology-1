@@ -14,6 +14,6 @@ def decrypt_all(cipher_text: str) -> None:
 
 
 if __name__ == '__main__':
-    text = ";\\r6TXfTe~r[bjrTeXrlbhrWb\\aZ2rHf\\aZrUeb^XarVelcgb~r[h[2r;TccXafrgbrg[XrUXfgrbYrhf!!!rAXkgrg\`XrTebhaW~rgelr48F $%+r\ar:T_b\fr6bhagXer@bWXsss"
+    text = ";\\r6TXfTe~r[bjrTeXrlbhrWb\\aZ2rHf\\aZrUeb^XarVelcgb~r[h[2r;TccXafrgbrg[XrUXfgrbYrhf!!!rAXkgrg\`XrTebhaW~rgelr48F $%+r\\ar:T_b\\fr6bhagXer@bWXsss"
     decrypt_all(text)
     print(decrypt(text, 114))

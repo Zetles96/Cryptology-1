@@ -40,4 +40,4 @@ def euclidall(a, b):
     return df
 
 
-print(euclidall(4294967317, 17))
+print(euclidall(65537,4294967317))

@@ -36,8 +36,8 @@ def euclidall(a, b):
         t_i = np.append(t_i, t)
         d = {"ri": r_i, "qi": q_i, "si": s_i, "ti": t_i}
         df = pd.DataFrame(data=d, index=i)
-        # latex = df.to_latex()
-    return df
+        latex = df.to_latex()
+    return latex
 
 
 print(euclidall(65537,4294967317))

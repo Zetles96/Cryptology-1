@@ -12,5 +12,5 @@ def sieve(N: int) -> list[int]:
 
 
 if __name__ == '__main__':
-    N = 1000
+    N = 10000
     print(sieve(N))
